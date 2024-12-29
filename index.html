@@ -5,44 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datenschutzerklärung</title>
     <style>
+        /* Grunddesign */
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #8e44ad, #3498db);
+            color: #ffffff;
         }
-        h1 {
-            color: #2c3e50;
+
+        h1, h2 {
+            color: #ffffff;
             text-align: center;
+            margin-bottom: 20px;
         }
+
         h2 {
-            color: #2c3e50;
+            color: #2ecc71;
         }
-        p {
+
+        p, ul {
+            font-size: 1rem;
             line-height: 1.6;
-            margin: 10px 0;
+            margin: 20px auto;
+            padding: 0 20px;
+            max-width: 900px;
         }
+
         ul {
             list-style-type: none;
-            padding: 0;
         }
+
         ul li {
-            margin: 5px 0;
+            margin: 10px 0;
         }
+
         a {
+            color: #1abc9c;
             text-decoration: none;
-            color: #3498db;
+            font-weight: bold;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
+        /* Content Box */
         .content {
-            background-color: #fff;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 900px;
+            color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-            margin: 0 auto;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #00bcd4;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #1abc9c;
+        }
+
+        /* Responsivität */
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+                margin: 10px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            footer {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -76,6 +131,10 @@
         <h2>3. Cookies</h2>
         <p>Meine Websites verwenden keine Cookies.</p>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Raffael Bauer. Alle Rechte vorbehalten.</p>
+    </footer>
 
 </body>
 </html>
